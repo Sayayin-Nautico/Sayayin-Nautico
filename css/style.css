@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Work sans";
+  transition: all 0.5s;
+  text-transform: uppercase;
 }
 
 main {
@@ -47,5 +49,33 @@ main {
   }
   100% {
     background: red;
+  }
+}
+span {
+  -webkit-animation: fontchange 2s infinite;
+          animation: fontchange 2s infinite;
+}
+
+@-webkit-keyframes fontchange {
+  0% {
+    font-family: sans-serif;
+  }
+  50% {
+    font-family: serif;
+  }
+  100% {
+    font-family: cursive;
+  }
+}
+
+@keyframes fontchange {
+  0% {
+    font-family: sans-serif;
+  }
+  50% {
+    font-family: serif;
+  }
+  100% {
+    font-family: cursive;
   }
 }/*# sourceMappingURL=style.css.map */
